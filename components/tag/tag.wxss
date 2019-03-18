@@ -1,0 +1,11 @@
+.container{
+    padding:15px 20px;
+    font-size: 30rpx;
+    background: #eee;
+    border-radius:30rpx;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,34 @@
+<import src="../star/star-template"></import>
+<view class="movie-detail">
+    <image class="banner" src="{{banner}}" mode="aspectFill"></image>
+    <view class="banner-content">
+        <text class="title">{{title}}</text>
+        <text class="country">{{country}}</text>
+        <view><text class="ls">{{like}}</text>人喜欢<text class="ls">{{comment}}</text>人评论</view>
+    </view>
+    <image src="{{banner}}" mode="aspectFill" class="preview" catchtap="onPreview"></image>
+    <view class="content">
+        <text class="alt-title">{{alt_title}}</text>
+        <view class="content-item"><text>评分</text> <template is="starTemplate" data="{{stars}}"></template><text class="average">{{average}}</text></view>
+        <view class="content-item"><text>导演</text><text>{{director}}</text></view>
+        <view class="content-item"><text>演员</text><text>{{castsName}}</text></view>
+        <view class="content-item"><text>类型</text><text>{{genres}}</text></view>
+        <button class="trailer" bind:tap="onTrailer" data-id="{{id}}">观看预告</button>
+    </view>
+    <view class="line"></view>
+    <view class="content sum">
+        <text class="alt-color">剧情介绍</text>
+        <text>{{sum}}</text>
+    </view>
+    <view class="line"></view>
+    <text class="content alt-color casts">影人</text>
+    <scroll-view class="" scroll-x="true" class="scroll">
+        <block wx:for="{{casts}}" wx:key="index">
+            <view>
+                <image src="{{item.avatars.small}}"></image>
+                <text>{{item.name}}</text>
+            </view>
+        </block>
+
+    </scroll-view>
+</view>

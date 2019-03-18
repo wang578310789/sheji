@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "v-swiper":"/components/swiper/swiper"
+    }
+}

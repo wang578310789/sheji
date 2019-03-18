@@ -1,0 +1,23 @@
+@import "../movies-item/movies-item-template.wxss";
+.movies-grid{
+    display: flex;
+    flex-direction: column;
+    padding:16rpx;
+    background: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.more-title,.movies-grid-item{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.movies-grid text{
+    font-size: 25rpx;
+}
+.more{
+    cursor: pointer;
+    color:#405F80
+}

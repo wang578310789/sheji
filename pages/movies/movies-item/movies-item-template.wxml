@@ -1,0 +1,13 @@
+<import src="../star/star-template"></import>
+<template name="moviesItemTemplate">
+    <view class="movies-item" catchtap="onClick" data-id="{{id}}">
+        <image src="{{imgUrl}}" class="banner" mode="aspectFit" lazy-load="true"></image>
+        <view class="head">
+            <text>{{title}}</text>
+        </view>
+        <view class="evaluate">
+            <template is="starTemplate" data="{{stars}}"></template>
+            <text>{{average}}</text>
+        </view>
+    </view>
+</template>

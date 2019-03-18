@@ -1,0 +1,14 @@
+<import src="../movies-item/movies-item-template"></import>
+<template name="moviesGridTemplate">
+    <view class="movies-grid">
+        <view class="more-title">
+            <text>{{title}}</text>
+            <text class="more" catchtap="more" data-type="{{type}}" data-title="{{title}}">更多</text>
+        </view>
+        <view class="movies-grid-item">
+            <block wx:for="{{movies}}" wx:key="index" >
+                    <template is="moviesItemTemplate" data="{{...item}}"></template>
+            </block>      
+        </view>
+    </view>
+</template>

@@ -1,0 +1,17 @@
+<view class="content">
+    <view class="movies-nav">
+        <image src="{{imgUrl}}" class="movies-img"></image>
+        <view class="movies-title">
+            <text>{{title}}</text>
+            <view class="movies-time">
+                <text>{{title}}</text>
+                <text>({{year}})</text>
+            </view>
+            <view class="movies-director">
+                <text>导演：</text>
+                <text>{{name}}</text>
+            </view>
+        </view>
+        <text class="movies-score">{{average}}</text>
+    </view>
+</view>

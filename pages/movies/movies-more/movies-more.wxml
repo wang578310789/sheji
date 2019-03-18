@@ -1,0 +1,6 @@
+<import src="../movies-item/movies-item-template"></import>
+<view class="more-container">
+    <block wx:for="{{movies}}" wx:key="index">
+        <template is="moviesItemTemplate" data="{{...item}}"></template>
+    </block>
+</view>

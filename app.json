@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/movies/movies",
+    "pages/map/map",
+    "pages/movies/movie-detail/movie-detail",
+    "pages/movies/movies-more/movies-more",
+    "pages/movies/trailer/trailer",
+    "pages/movies/search/search"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#eaedf7",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#cccccc",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影",
+        "iconPath": "images/icon/movie.png",
+        "selectedIconPath": "images/icon/movies.png"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "地图",
+        "iconPath": "images/icon/map.png",
+        "selectedIconPath": "images/icon/maps.png"
+      }
+    ]
+  }
+}

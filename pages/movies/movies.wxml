@@ -1,0 +1,12 @@
+<import src="movies-grid/movies-grid-template.wxml"></import>
+<view class="header">
+    <v-swiper imgUrl="{{imgUrl}}"></v-swiper>
+</view>
+<view class="search" bind:tap="onSearch">
+    <icon type="search" size="20"></icon>
+    <text>搜索你想观看的电影</text>
+</view> 
+<template is="moviesGridTemplate" data="{{...in_theaters}}"></template>
+<template is="moviesGridTemplate" data="{{...coming_soon}}"></template>
+<template is="moviesGridTemplate" data="{{...top250}}"></template>
+

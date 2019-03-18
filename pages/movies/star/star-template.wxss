@@ -1,0 +1,7 @@
+.star image{
+    width:20rpx;
+    height:20rpx;
+}
+.star{
+    display: flex;
+}

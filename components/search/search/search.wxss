@@ -1,0 +1,30 @@
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.movies-nav{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20rpx;
+}
+.movies-nav .movies-img{
+    width: 200rpx;
+    height: 200rpx;
+}
+.movies-title{
+    margin-left: 20rpx;
+}
+.movies-title .movies-time{
+    margin: 20rpx 0;
+    font-size: 30rpx;
+    color: rgb(192, 192, 192);
+}
+.movies-title .movies-director{
+    color: rgb(155, 154, 154);
+    font-size: 30rpx;
+}
+.movies-score{
+    position: absolute;
+    right: 30rpx;
+    color: #ff2d51;
+}

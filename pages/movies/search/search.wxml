@@ -1,0 +1,15 @@
+<view class="header">
+    <view class="search">
+        <icon type="search" size="18" color=""></icon>
+        <input type="text" confirm-type="search" bindconfirm="onConfirm" value="{{value}}" />
+        <icon type="clear" size="18" bind:tap="onToggle"></icon>
+    </view>
+    <button bind:tap="onBtn" plain="{{true}}" class="cancel">取消</button>
+</view>
+<view class="container-nav">
+    <block wx:for="{{movies}}" wx:key="index">
+        <view catchtap="onSearch" data-id="{{item.id}}">
+            <v-search imgUrl="{{item.imgUrl}}" name="{{item.name}}" title="{{item.title}}" ID="{{item.id}}" year="{{item.year}}" average="{{item.average}}"></v-search>
+        </view>
+    </block>
+</view>
